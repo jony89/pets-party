@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="מסיבת החיות של משה - פעילות עם חיות אקזוטיות לימי הולדת וימי כיף. חוויה בלתי נשכחת לילדים עם מגוון רחב של בעלי חיים. בכל הארץ 054-6673141">
+    <meta name="keywords" content="מסיבת חיות, יום הולדת עם חיות, חיות אקזוטיות, פעילות לילדים, יום כיף, הפעלה עם חיות, משה משרקי, ימי הולדת">
+    <meta name="author" content="מסיבת החיות של משה">
+    <meta property="og:title" content="מסיבת החיות של משה - פעילות עם חיות אקזוטיות">
+    <meta property="og:description" content="חוויה בלתי נשכחת לימי הולדת וימי כיף עם מגוון רחב של חיות אקזוטיות">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://petsparty.co.il">
+    <title>מסיבת החיות של משה - פעילות עם חיות אקזוטיות לימי הולדת וימי כיף</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&family=Varela+Round&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #FF6B35;
+            --secondary-color: #4ECDC4;
+            --accent-color: #FFD23F;
+            --dark-color: #2C3E50;
+            --light-color: #F7F9FC;
+            --text-color: #333;
+            --white: #FFFFFF;
+            --gradient: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        body {
+            font-family: 'Rubik', sans-serif;
+            color: var(--text-color);
+            line-height: 1.7;
+            overflow-x: hidden;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.95) 0%, rgba(247, 147, 30, 0.95) 100%);
+            box-shadow: var(--shadow-lg);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        header.scrolled {
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.98) 0%, rgba(247, 147, 30, 0.98) 100%);
+            padding: 5px 0;
+            box-shadow: var(--shadow-lg);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            margin: 0 auto;
+            flex-direction: row-reverse;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo img {
+            height: 65px;
+            width: auto;
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            color: var(--white);
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--white);
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 1.05rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            order: 3;
+            margin-right: 0;
+        }
+
+        .menu-toggle span {
+            width: 28px;
+            height: 3px;
+            background: var(--white);
+            border-radius: 3px;
+            transition: all 0.3s ease;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: #2C3E50;
+            color: var(--white);
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 1920px;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/images/home_page.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 0;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+            animation: fadeInUp 1s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h2 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 35px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        .btn-primary {
+            background: var(--gradient);
+            color: var(--white);
+            box-shadow: 0 5px 20px rgba(255, 107, 53, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(255, 107, 53, 0.6);
+        }
+
+        .btn-secondary {
+            background: var(--white);
+            color: var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: var(--white);
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.6);
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 15%;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.8rem;
+            color: var(--dark-color);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .section-title p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* About Section */
+        #about {
+            background: var(--light-color);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-video {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .about-video video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .about-text h3 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 1rem;
+            background: var(--white);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-item i {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        .feature-item span {
+            font-weight: 600;
+        }
+
+        /* Animals Section */
+        .animals-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .animal-card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .animal-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            background: var(--gradient);
+            color: var(--white);
+        }
+
+        .animal-card i {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .animal-card:hover i {
+            color: var(--white);
+        }
+
+        /* Gallery Section */
+        #gallery {
+            background: var(--light-color);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            cursor: pointer;
+            aspect-ratio: 1;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 107, 53, 0.7);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gallery-item:hover::after {
+            opacity: 1;
+        }
+
+        /* Moshe Section */
+        .moshe-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: center;
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .moshe-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .moshe-images img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+        }
+
+        .moshe-images img:first-child {
+            grid-column: 1 / -1;
+            height: 300px;
+        }
+
+        .moshe-text h3 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .moshe-text p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        /* FAQ Section */
+        #faq {
+            background: var(--light-color);
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 1rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 1.15rem;
+            color: var(--dark-color);
+        }
+
+        .faq-question i {
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 1.5rem;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 0 1.5rem 1.5rem;
+        }
+
+        .faq-answer p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        /* Testimonials Section */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .testimonial-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .stars {
+            color: var(--accent-color);
+        }
+
+        /* Contact Section */
+        #contact {
+            background: var(--light-color);
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: var(--white);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateX(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-item i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            min-width: 40px;
+        }
+
+        .contact-item h4 {
+            margin-bottom: 0.5rem;
+            color: var(--dark-color);
+        }
+
+        .contact-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-link {
+            width: 50px;
+            height: 50px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary-color);
+            color: var(--white);
+            border-radius: 50%;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+
+        .social-link i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+        }
+
+        .social-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(255, 107, 53, 0.4);
+        }
+
+        .social-link.facebook {
+            background: #1877F2;
+        }
+
+        .social-link.facebook:hover {
+            box-shadow: 0 8px 20px rgba(24, 119, 242, 0.4);
+        }
+
+        .social-link.instagram {
+            background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF);
+        }
+
+        .social-link.instagram:hover {
+            box-shadow: 0 8px 20px rgba(221, 42, 123, 0.4);
+        }
+
+        .social-link.whatsapp {
+            background: #25D366;
+        }
+
+        .social-link.whatsapp:hover {
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .contact-form {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--dark-color);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-family: 'Rubik', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-color);
+            color: var(--white);
+            padding: 3rem 5%;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Scroll to Top Button */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--gradient);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(255, 107, 53, 0.4);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(255, 107, 53, 0.6);
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 999;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.6);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 968px) {
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                right: -100%;
+                flex-direction: column;
+                background: linear-gradient(135deg, rgba(255, 107, 53, 0.98) 0%, rgba(247, 147, 30, 0.98) 100%);
+                width: 100%;
+                padding: 2rem;
+                box-shadow: var(--shadow-lg);
+                transition: right 0.3s ease;
+                align-items: flex-start;
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            .hero h2 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .about-content,
+            .contact-container,
+            .moshe-content {
+                grid-template-columns: 1fr;
+            }
+
+            .moshe-images img:first-child {
+                height: 250px;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .whatsapp-float,
+            .scroll-top {
+                bottom: 20px;
+            }
+
+            .whatsapp-float {
+                right: 20px;
+            }
+
+            .scroll-top {
+                left: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            section {
+                padding: 60px 5%;
+            }
+
+            .animals-list {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>מסיבת החיות של משה</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">ראשי</a></li>
+                <li><a href="#about">אודות</a></li>
+                <li><a href="#gallery">גלריה</a></li>
+                <li><a href="#moshe">מושיקו</a></li>
+                <li><a href="#faq">שאלות ותשובות</a></li>
+                <li><a href="#testimonials">המלצות</a></li>
+                <li><a href="#contact">צור קשר</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>פעילות עם חיות אקזוטיות שלא תשכחו</h2>
+            <p>חוויה בלתי נשכחת לימי הולדת וימי כיף עם מגוון רחב של בעלי חיים</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/972546673141?text=שלום,%20אני%20מעוניין%20בפרטים%20על%20הפעילות%20עם%20החיות" class="btn btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> שלח וואטסאפ
+                </a>
+                <a href="tel:0546673141" class="btn btn-primary">
+                    <i class="fas fa-phone"></i> 054-6673141
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i> צור קשר
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-title">
+            <h2>אודות הפעילות</h2>
+            <p>הפעלה ייחודית ומרתקת עם חיות אקזוטיות לימי הולדת וימי כיף</p>
+        </div>
+        <div class="about-content">
+            <div class="about-video">
+                <video controls poster="./assets/images/home_page.jpg">
+                    <source src="./assets/videos/video.mp4" type="video/mp4">
+                    הדפדפן שלך לא תומך בתגית וידאו.
+                </video>
+            </div>
+            <div class="about-text">
+                <h3>חוויה בלתי נשכחת לילדים</h3>
+                <p>ליום ההולדת או יום הכיף שלכם אנחנו מגיעים עם מגוון גדול של בעלי חיים אקזוטיים לצד בעלי חיים מוכרים ואהובים. כשהילדים מגיעים, החיות מוסתרות וכשמתחילים, אנחנו וילד יום ההולדת מציגים לילדים את החיות.</p>
+                <p>אנחנו משלבים את הצגת החיות עם משימות מגניבות שקשורות לבעלי החיים, הסבר קליל וכמובן ליטוף. ההפעלה נמשכת כשעה וחצי, ואת ילד יום ההולדת אנחנו שמים במרכז ההפעלה - הוא מרגיש שזו המסיבה שלו!</p>
+                
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-clock"></i>
+                        <span>שעה וחצי הפעלה</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>פעילות מבוטחת</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-user-md"></i>
+                        <span>פיקוח וטרינרי</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-paw"></i>
+                        <span>מגוון רחב של חיות</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-title" style="margin-top: 4rem;">
+            <h2>החיות שמשתתפות בפעילות</h2>
+            <p>מגוון גדול של בעלי חיים אקזוטיים ומוכרים</p>
+        </div>
+        <div class="animals-list">
+            <div class="animal-card">
+                <i class="fas fa-dragon"></i>
+                <p>איגואנה</p>
+            </div>
+            <div class="animal-card">
+                <i class="fas fa-dragon"></i>
+                <p>חרדון מזוקן</p>
+            </div>
+            <div class="animal-card">
+                <i class="fas fa-turtle"></i>
+                <p>צבים</p>
+            </div>
+            <div class="animal-card">
+                <i class="fas fa-kiwi-bird"></i>
+                <p>תיקנים לוחשים</p>
+            </div>
+            <div class="animal-card">
+                <i class="fas fa-snake"></i>
+                <p>כרכן תירס</p>
+            </div>
+            <div class="animal-card">
+                <i class="fas fa-snake"></i>
+                <p>פיתון מתכדר</p>
+            </div>
+            <div class="animal-card">
+                <i class="fas fa-snake"></i>
+                <p>נחש בואה</p>
+            </div>
+            <div class="animal-card">
+                <i class="fas fa-dove"></i>
+                <p>מקלונים</p>
+            </div>
+            <div class="animal-card">
+                <i class="fas fa-crow"></i>
+                <p>תוכי קוקטייל</p>
+            </div>
+            <div class="animal-card">
+                <i class="fas fa-crow"></i>
+                <p>תוכי מדבר</p>
+            </div>
+            <div class="animal-card">
+                <i class="fas fa-feather"></i>
+                <p>תרנגול משי</p>
+            </div>
+            <div class="animal-card">
+                <i class="fas fa-hamster"></i>
+                <p>שרקנים</p>
+            </div>
+            <div class="animal-card">
+                <i class="fas fa-rabbit"></i>
+                <p>ארנבונים</p>
+            </div>
+            <div class="animal-card">
+                <i class="fas fa-hamster"></i>
+                <p>עכברי פנדה</p>
+            </div>
+            <div class="animal-card">
+                <i class="fas fa-spider"></i>
+                <p>עקרב</p>
+            </div>
+            <div class="animal-card">
+                <i class="fas fa-spider"></i>
+                <p>טרנטולה</p>
+            </div>
+            <div class="animal-card">
+                <i class="fas fa-dove"></i>
+                <p>תורי קוסמים</p>
+            </div>
+            <div class="animal-card">
+                <i class="fas fa-hamster"></i>
+                <p>אוגרים</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="section-title">
+            <h2>תמונות מהפעילות</h2>
+            <p>הציצו לתוך החוויה המדהימה שלנו</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="./assets/images/activities/06458c75-4cfb-4a32-a32b-76b204fa486e.jpg" alt="פעילות עם חיות 1">
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/images/activities/10328c44-4ec2-4c0c-bd23-4e7e94bab1bd.jpg" alt="פעילות עם חיות 2">
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/images/activities/118d4888-e434-41a2-98a3-7fb27ae3aa5b.jpg" alt="פעילות עם חיות 3">
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/images/activities/2c31d082-4ef9-4ee8-b0c8-52014cea216c.jpg" alt="פעילות עם חיות 4">
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/images/activities/38b7dbb0-f783-48c8-a749-f0d50d0dead1.jpg" alt="פעילות עם חיות 5">
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/images/activities/39443573-e3ca-4d19-ae56-2700727e0de8.jpg" alt="פעילות עם חיות 6">
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/images/activities/6f39e020-44cb-44b4-b2d6-abae191922ae.jpg" alt="פעילות עם חיות 7">
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/images/activities/82d0afd5-a8ba-4b1c-a4c8-d573062d9c70.jpg" alt="פעילות עם חיות 8">
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/images/activities/8a079f1c-40d8-4523-802e-5c287c11088b.jpg" alt="פעילות עם חיות 9">
+            </div>
+        </div>
+    </section>
+
+    <!-- Moshe Section -->
+    <section id="moshe">
+        <div class="section-title">
+            <h2>מושיקו - המומחה שלנו</h2>
+            <p>הכירו את משה, המפעיל המקצועי והמנוסה שלנו</p>
+        </div>
+        <div class="moshe-content">
+            <div class="moshe-images">
+                <img src="./assets/images/moshe/0a110061-6a17-41c4-a0a1-06fe56db8a44.jpg" alt="משה 1">
+                <img src="./assets/images/moshe/2bb885fd-08a7-42f5-ac59-31868a71bb52.jpg" alt="משה 2">
+                <img src="./assets/images/moshe/4ca23db5-6af2-49f6-baa8-30cd5ef9e2b6.jpg" alt="משה 3">
+            </div>
+            <div class="moshe-text">
+                <h3>משה משרקי</h3>
+                <p>שלום! אני משה, ואנחנו מביאים לכם חוויה ייחודית עם חיות אקזוטיות שלא תמצאו בשום מקום אחר. עם שנות ניסיון רבות בעבודה עם בעלי חיים, אנחנו מבטיחים לכם הפעלה מקצועית, בטוחה ומהנה.</p>
+                <p>כל החיות שלנו חיות בתנאים מעולים, בכלובים מרווחים ויפים, ומטופלות על ידי וטרינר באופן תדיר. אנחנו דואגים להכל - מהמחצלות ועד ההגברה למוסיקה (רק צריך נקודת חשמל!).</p>
+                <p>אנחנו מגיעים לכל הארץ, ומתאימים את ההפעלה לכל גיל וסוג אירוע.</p>
+                <p><strong>בואו ליצור ביחד חוויה בלתי נשכחת!</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="section-title">
+            <h2>שאלות ותשובות</h2>
+            <p>כל מה שרציתם לדעת על הפעילות שלנו</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>האם החיות ארסיות או מסוכנות?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>החיות לא מסוכנות ולא תוקפניות, הן מורגלות למגע אדם. העקרב והטרנטולה - הארס שלהן לא מסוכן לבני אדם והן רגועות ולא תוקפניות. כל החיות מטופלות ברמה גבוהה ומפוקחות על ידי וטרינר באופן תדיר.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>כמה זמן נמשכת הפעילות לילדים ביום הולדת?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>ההפעלה נמשכת כשעה וחצי. את ילד או ילדת יום ההולדת אנחנו שמים במרכז ההפעלה עם החיות, הוא מרגיש שזו המסיבה שלו וחלק עקרי בחוויה.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>כיצד הפעילות ביום כיף מתבצעת?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>ליום הכיף או יום ההולדת אנחנו מגיעים עם מגוון גדול של בעלי חיים אקזוטיים לצד בעלי חיים מוכרים ואהובים. כשהילדים מגיעים החיות מוסתרות. כשמתחילים, אנחנו וילד יום ההולדת מציגים ביחד לילדים את החיות תוך שילוב הצגת החיות עם משימות מגניבות שקשורות לבעלי החיים, הסבר קליל וכמובן ליטוף.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>אילו חיות יש במסיבת יום ההולדת?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>איגואנה, חרדון מזוקן, צבים, תיקנים לוחשים, כרכן תירס, פיתון מתכדר, נחש בואה, מקלונים, תוכי קוקטייל, תוכי מדבר, תרנגול משי, שרקנים, ארנבונים, עכברי פנדה, עקרב, טרנטולה, תורי קוסמים ואוגרים. מדובר במגוון גדול של בעלי חיים שלא תמצאו במקום אחר!</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>מה עוד צריך לדעת?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>אנחנו דואגים להכל - מחצלות, הגברה למוסיקה שלטובתה נצטרך נקודת חשמל. כמו כן, הפעילות מבוטחת והחיות מקבלות תנאים מעולים וחיות בכלובים מרווחים ויפים. </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>לאיזה איזורים אתם מגיעים?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>אנו מספקים שירותים בכל רחבי הארץ. לפרטים נוספים ובירור זמינות, צרו איתנו קשר בטלפון 054-6673141.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="section-title">
+            <h2>המלצות חמות</h2>
+            <p>מה אומרים הלקוחות שלנו</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <img src="./assets/images/testimonials/198d488f-ce98-4df2-8f56-65c900e50c52.jpg" alt="המלצה 1" class="testimonial-image">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"חוויה מדהימה! הילדים נהנו כל כך והמפעיל היה מקצועי ומקסים. החיות היו מטופחות ויפות. ממליצה בחום!"</p>
+                <div class="testimonial-author">
+                    <i class="fas fa-user-circle"></i>
+                    <span>הורה מרוצה</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="./assets/images/testimonials/2aa74535-6e7b-4f93-a32d-03efc45268ed.jpg" alt="המלצה 2" class="testimonial-image">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"יום הולדת שלא נשכח! משה עשה עבודה מדהימה, הילדים היו מרותקים לאורך כל ההפעלה. הייתה פנינה אמיתית!"</p>
+                <div class="testimonial-author">
+                    <i class="fas fa-user-circle"></i>
+                    <span>לקוח מרוצה</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="./assets/images/testimonials/85df2356-0ab6-4536-b851-6dcdededbb0a.jpg" alt="המלצה 3" class="testimonial-image">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"הפעילות הכי מוצלחת שהיתה לנו! המגוון של החיות מדהים והאווירה הייתה נהדרת. תודה רבה!"</p>
+                <div class="testimonial-author">
+                    <i class="fas fa-user-circle"></i>
+                    <span>משפחה מרוצה</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="./assets/images/testimonials/b767fb59-3694-4bd2-ae2a-ede470fa7c83.jpg" alt="המלצה 4" class="testimonial-image">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"משה עושה עבודה מדהימה! הילדים היו בהתרגשות גדולה והחיות היו מקסימות. בהחלט נזמין שוב!"</p>
+                <div class="testimonial-author">
+                    <i class="fas fa-user-circle"></i>
+                    <span>הורים מרוצים</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="./assets/images/testimonials/d1f444d4-2b32-440a-ae8a-56d7d8894407.jpg" alt="המלצה 5" class="testimonial-image">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"חוויה בלתי נשכחת! הילדים דיברו על זה כל השבוע. משה מקצועי, סבלני ויודע לעבוד עם ילדים. ממליצה מאוד!"</p>
+                <div class="testimonial-author">
+                    <i class="fas fa-user-circle"></i>
+                    <span>אמא מרוצה</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="./assets/images/testimonials/e7896205-c04b-48e6-a27d-a692f6ac8c72.jpg" alt="המלצה 6" class="testimonial-image">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"יום הולדת מושלם! ההפעלה הייתה מקצועית, מהנה ובטוחה. החיות במצב מעולה וכולם נהנו. תודה!"</p>
+                <div class="testimonial-author">
+                    <i class="fas fa-user-circle"></i>
+                    <span>לקוח מרוצה</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="./assets/images/testimonials/ea0fa27e-4b80-4abd-942d-c52d1d12bba0.jpg" alt="המלצה 7" class="testimonial-image">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"הפעלה מדהימה ביום הכיף של הגן! הילדים היו מרותקים והמורות התלהבו. שירות מעולה ומקצועי!"</p>
+                <div class="testimonial-author">
+                    <i class="fas fa-user-circle"></i>
+                    <span>גננת מרוצה</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="./assets/images/testimonials/f57349ed-d12d-49c9-bf25-621d759fd3b2.jpg" alt="המלצה 8" class="testimonial-image">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"אנחנו ממליצים בחום! החוויה הייתה מיוחדת, משה היה נהדר והחיות פשוט מקסימות. יום הולדת שלא נשכח!"</p>
+                <div class="testimonial-author">
+                    <i class="fas fa-user-circle"></i>
+                    <span>משפחה שמחה</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-title">
+            <h2>צור קשר</h2>
+            <p>נשמח לענות על כל שאלה ולהזמין את הפעילות שלנו</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>טלפון</h4>
+                        <a href="tel:0546673141">054-6673141</a>
+                        <p>ימים א-ה: 9:00 - 20:00<br>יום שישי: 9:00 - 13:00</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>וואטסאפ</h4>
+                        <a href="https://wa.me/972546673141?text=שלום,%20אני%20מעוניין%20בפרטים%20על%20הפעילות%20עם%20החיות" target="_blank">שלח הודעת וואטסאפ</a>
+                        <p>זמינים לשאלות ולהזמנות</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>איזור פעילות</h4>
+                        <p>בכל רחבי הארץ</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-share-alt"></i>
+                    <div>
+                        <h4>עקבו אחרינו</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/profile.php?id=100064280765103" target="_blank" class="social-link facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://instagram.com/moshe__mashraki" target="_blank" class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/972546673141" target="_blank" class="social-link whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3 style="margin-bottom: 1.5rem; color: var(--dark-color);">שלח הודעה</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">שם מלא *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">טלפון *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">אימייל</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">הודעה *</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i> שלח הודעה
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>מסיבת החיות של משה</h3>
+                <p>פעילות עם חיות אקזוטיות לימי הולדת וימי כיף</p>
+                <p>חוויה בלתי נשכחת לכל המשפחה</p>
+            </div>
+            <div class="footer-section">
+                <h3>קישורים מהירים</h3>
+                <a href="#home">ראשי</a>
+                <a href="#about">אודות</a>
+                <a href="#gallery">גלריה</a>
+                <a href="#faq">שאלות ותשובות</a>
+                <a href="#contact">צור קשר</a>
+            </div>
+            <div class="footer-section">
+                <h3>יצירת קשר</h3>
+                <p><i class="fas fa-phone"></i> 054-6673141</p>
+                <p><i class="fas fa-map-marker-alt"></i> בכל רחבי הארץ</p>
+                <p><i class="fas fa-clock"></i> ימים א-ה: 9:00 - 20:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 מסיבת החיות של משה. כל הזכויות שמורות.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/972546673141?text=שלום,%20אני%20מעוניין%20בפרטים%20על%20הפעילות%20עם%20החיות" class="whatsapp-float" target="_blank" title="שלח הודעה בוואטסאפ">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+
+        // Header scroll effect
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+                // Close all FAQ items
+                faqItems.forEach(faq => faq.classList.remove('active'));
+                
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Scroll to Top Button
+        const scrollTopBtn = document.querySelector('.scroll-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Contact Form Handling
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // Create WhatsApp message
+            const whatsappMessage = `שלום, אני ${name}%0aטלפון: ${phone}%0a${email ? 'אימייל: ' + email + '%0a' : ''}הודעה: ${message}`;
+            const whatsappURL = `https://wa.me/972546673141?text=${whatsappMessage}`;
+            
+            // Open WhatsApp
+            window.open(whatsappURL, '_blank');
+            
+            // Reset form
+            contactForm.reset();
+            alert('תודה! אנו מעבירים אותך לוואטסאפ להמשך התקשורת.');
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.animal-card, .gallery-item, .testimonial-card, .feature-item, .contact-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(el);
+        });
+
+        // Lazy loading for images
+        if ('loading' in HTMLImageElement.prototype) {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                img.loading = 'lazy';
+            });
+        }
+    </script>
+</body>
+</html>
