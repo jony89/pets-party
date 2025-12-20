@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MRN6Q9DGZS"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MRN6Q9DGZS');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="מסיבת החיות של משה - פעילות עם חיות אקזוטיות לימי הולדת וימי כיף. חוויה בלתי נשכחת לילדים עם מגוון רחב של בעלי חיים. בכל הארץ 054-6673141">
@@ -1415,6 +1424,15 @@
     </div>
 
     <script>
+        // Google Analytics Event Tracking Function
+        function trackEvent(eventName, eventCategory, eventLabel, eventValue = undefined) {
+            gtag('event', eventName, {
+                'event_category': eventCategory,
+                'event_label': eventLabel,
+                ...(eventValue !== undefined && { 'value': eventValue })
+            });
+        }
+
         // Mobile Menu Toggle
         const menuToggle = document.querySelector('.menu-toggle');
         const navLinks = document.querySelector('.nav-links');
@@ -1422,6 +1440,7 @@
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
             menuToggle.classList.toggle('active');
+            trackEvent('menu_toggle', 'navigation', menuToggle.classList.contains('active') ? 'opened' : 'closed');
         });
 
         // Close mobile menu when clicking on a link
@@ -1445,8 +1464,11 @@
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                trackEvent('navigation_click', 'navigation', href);
+                
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
+                const target = document.querySelector(href);
                 if (target) {
                     const headerOffset = 80;
                     const elementPosition = target.getBoundingClientRect().top;
@@ -1458,6 +1480,41 @@
                     });
                 }
             });
+        });
+
+        // Track WhatsApp button clicks (hero section)
+        document.querySelectorAll('.btn-whatsapp').forEach(btn => {
+            btn.addEventListener('click', function (e) {
+                trackEvent('whatsapp_click', 'engagement', 'hero_whatsapp');
+            });
+        });
+
+        // Track phone button clicks (hero section)
+        document.querySelectorAll('.btn-primary').forEach(btn => {
+            if (btn.href && btn.href.startsWith('tel:')) {
+                btn.addEventListener('click', function (e) {
+                    trackEvent('phone_click', 'engagement', 'hero_phone');
+                });
+            }
+        });
+
+        // Track external links (Facebook, Instagram, WhatsApp social)
+        document.querySelectorAll('.social-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                const platform = this.classList.contains('facebook') ? 'facebook' :
+                                this.classList.contains('instagram') ? 'instagram' :
+                                this.classList.contains('whatsapp') ? 'whatsapp' : 'unknown';
+                trackEvent('social_link_click', 'engagement', platform);
+            });
+        });
+
+        // Track contact form submission
+        document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+            if (!link.classList.contains('btn-whatsapp') && !link.classList.contains('social-link')) {
+                link.addEventListener('click', function (e) {
+                    trackEvent('whatsapp_contact_click', 'engagement', this.classList.contains('whatsapp-float') ? 'floating_button' : 'contact_info');
+                });
+            }
         });
 
         // FAQ Accordion
@@ -1488,6 +1545,7 @@
         });
 
         scrollTopBtn.addEventListener('click', () => {
+            trackEvent('scroll_to_top', 'navigation', 'button_click');
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
@@ -1503,6 +1561,9 @@
             const phone = document.getElementById('phone').value;
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
+            
+            // Track form submission
+            trackEvent('contact_form_submit', 'engagement', 'contact_section', 1);
             
             // Create WhatsApp message
             const whatsappMessage = `שלום, אני ${name}%0aטלפון: ${phone}%0a${email ? 'אימייל: ' + email + '%0a' : ''}הודעה: ${message}`;
