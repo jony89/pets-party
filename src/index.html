@@ -57,11 +57,14 @@
     </script>
 </head>
 <body>
+    <!-- Skip to main content link -->
+    <a href="#main-content" class="skip-link">דלג לתוכן ראשי</a>
+    
     <!-- Header -->
     <header>
         <nav>
             <div class="logo">
-                <h1>מסיבת החיות של משה</h1>
+                <span class="site-title">מסיבת החיות של משה</span>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">ראשי</a></li>
@@ -81,19 +84,20 @@
     </header>
 
     <!-- Hero Section -->
+    <main id="main-content">
     <section id="home" class="hero">
         <div class="hero-content">
-            <h2>פעילות עם חיות אקזוטיות שלא תשכחו</h2>
+            <h1>פעילות עם חיות אקזוטיות שלא תשכחו</h1>
             <p>חוויה בלתי נשכחת לימי הולדת וימי כיף עם מגוון רחב של בעלי חיים</p>
             <div class="cta-buttons">
-                <a href="https://wa.me/972546673141?text=שלום,%20אני%20מעוניין%20בפרטים%20על%20הפעילות%20עם%20החיות" class="btn btn-whatsapp" target="_blank">
-                    <i class="fab fa-whatsapp"></i> שלח וואטסאפ
+                <a href="https://wa.me/972546673141?text=שלום,%20אני%20מעוניין%20בפרטים%20על%20הפעילות%20עם%20החיות" class="btn btn-whatsapp" target="_blank" aria-label="שלח הודעה בוואטסאפ">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i> שלח וואטסאפ
                 </a>
-                <a href="tel:0546673141" class="btn btn-primary">
-                    <i class="fas fa-phone"></i> 054-6673141
+                <a href="tel:0546673141" class="btn btn-primary" aria-label="התקשר למשה בטלפון">
+                    <i class="fas fa-phone" aria-hidden="true"></i> 054-6673141
                 </a>
                 <a href="#contact" class="btn btn-secondary">
-                    <i class="fas fa-envelope"></i> צור קשר
+                    <i class="fas fa-envelope" aria-hidden="true"></i> צור קשר
                 </a>
             </div>
         </div>
@@ -107,9 +111,9 @@
         </div>
         <div class="about-content">
             <div class="about-video">
-                <video controls poster="./assets/images/home_page.jpg">
+                <video controls poster="./assets/images/home_page.jpg" aria-label="סרטון הפעילות עם חיות של משה">
                     <source src="./assets/videos/video.mp4" type="video/mp4">
-                    הדפדפן שלך לא תומך בתגית וידאו.
+                    הדפדפן שלך לא תומך בתגית וידאו. אנא השתמש בדפדפן עדכני יותר או הורד את הסרטון.
                 </video>
             </div>
             <div class="about-text">
@@ -119,19 +123,19 @@
                 
                 <div class="features-grid">
                     <div class="feature-item">
-                        <i class="fas fa-clock"></i>
+                        <i class="fas fa-clock" aria-hidden="true"></i>
                         <span>שעה וחצי הפעלה</span>
                     </div>
                     <div class="feature-item">
-                        <i class="fas fa-shield-alt"></i>
+                        <i class="fas fa-shield-alt" aria-hidden="true"></i>
                         <span>פעילות מבוטחת</span>
                     </div>
                     <div class="feature-item">
-                        <i class="fas fa-user-md"></i>
+                        <i class="fas fa-user-md" aria-hidden="true"></i>
                         <span>פיקוח וטרינרי</span>
                     </div>
                     <div class="feature-item">
-                        <i class="fas fa-paw"></i>
+                        <i class="fas fa-paw" aria-hidden="true"></i>
                         <span>מגוון רחב של חיות</span>
                     </div>
                 </div>
@@ -139,80 +143,80 @@
         </div>
 
         <div class="section-title" style="margin-top: 4rem;">
-            <h2>החיות שמשתתפות בפעילות</h2>
+            <h3>החיות שמשתתפות בפעילות</h3>
             <p>מגוון גדול של בעלי חיים אקזוטיים ומוכרים</p>
         </div>
         <div class="animals-list">
             <div class="animal-card">
-                <i class="fas fa-dragon"></i>
+                <i class="fas fa-dragon" aria-hidden="true"></i>
                 <p>איגואנה</p>
             </div>
             <div class="animal-card">
-                <i class="fas fa-dragon"></i>
+                <i class="fas fa-dragon" aria-hidden="true"></i>
                 <p>חרדון מזוקן</p>
             </div>
             <div class="animal-card">
-                <i class="fas fa-turtle"></i>
+                <i class="fas fa-turtle" aria-hidden="true"></i>
                 <p>צבים</p>
             </div>
             <div class="animal-card">
-                <i class="fas fa-kiwi-bird"></i>
+                <i class="fas fa-kiwi-bird" aria-hidden="true"></i>
                 <p>תיקנים לוחשים</p>
             </div>
             <div class="animal-card">
-                <i class="fas fa-snake"></i>
+                <i class="fas fa-snake" aria-hidden="true"></i>
                 <p>כרכן תירס</p>
             </div>
             <div class="animal-card">
-                <i class="fas fa-snake"></i>
+                <i class="fas fa-snake" aria-hidden="true"></i>
                 <p>פיתון מתכדר</p>
             </div>
             <div class="animal-card">
-                <i class="fas fa-snake"></i>
+                <i class="fas fa-snake" aria-hidden="true"></i>
                 <p>נחש בואה</p>
             </div>
             <div class="animal-card">
-                <i class="fas fa-dove"></i>
+                <i class="fas fa-dove" aria-hidden="true"></i>
                 <p>מקלונים</p>
             </div>
             <div class="animal-card">
-                <i class="fas fa-crow"></i>
+                <i class="fas fa-crow" aria-hidden="true"></i>
                 <p>תוכי קוקטייל</p>
             </div>
             <div class="animal-card">
-                <i class="fas fa-crow"></i>
+                <i class="fas fa-crow" aria-hidden="true"></i>
                 <p>תוכי מדבר</p>
             </div>
             <div class="animal-card">
-                <i class="fas fa-feather"></i>
+                <i class="fas fa-feather" aria-hidden="true"></i>
                 <p>תרנגול משי</p>
             </div>
             <div class="animal-card">
-                <i class="fas fa-hamster"></i>
+                <i class="fas fa-hamster" aria-hidden="true"></i>
                 <p>שרקנים</p>
             </div>
             <div class="animal-card">
-                <i class="fas fa-rabbit"></i>
+                <i class="fas fa-rabbit" aria-hidden="true"></i>
                 <p>ארנבונים</p>
             </div>
             <div class="animal-card">
-                <i class="fas fa-hamster"></i>
+                <i class="fas fa-hamster" aria-hidden="true"></i>
                 <p>עכברי פנדה</p>
             </div>
             <div class="animal-card">
-                <i class="fas fa-spider"></i>
+                <i class="fas fa-spider" aria-hidden="true"></i>
                 <p>עקרב</p>
             </div>
             <div class="animal-card">
-                <i class="fas fa-spider"></i>
+                <i class="fas fa-spider" aria-hidden="true"></i>
                 <p>טרנטולה</p>
             </div>
             <div class="animal-card">
-                <i class="fas fa-dove"></i>
+                <i class="fas fa-dove" aria-hidden="true"></i>
                 <p>תורי קוסמים</p>
             </div>
             <div class="animal-card">
-                <i class="fas fa-hamster"></i>
+                <i class="fas fa-hamster" aria-hidden="true"></i>
                 <p>אוגרים</p>
             </div>
         </div>
@@ -263,9 +267,9 @@
         </div>
         <div class="moshe-content">
             <div class="moshe-images">
-                <img src="./assets/images/moshe/0a110061-6a17-41c4-a0a1-06fe56db8a44.jpg" alt="משה 1">
-                <img src="./assets/images/moshe/2bb885fd-08a7-42f5-ac59-31868a71bb52.jpg" alt="משה 2">
-                <img src="./assets/images/moshe/4ca23db5-6af2-49f6-baa8-30cd5ef9e2b6.jpg" alt="משה 3">
+                <img src="./assets/images/moshe/0a110061-6a17-41c4-a0a1-06fe56db8a44.jpg" alt="משה משרקי עם בעלי חיים אקזוטיים">
+                <img src="./assets/images/moshe/2bb885fd-08a7-42f5-ac59-31868a71bb52.jpg" alt="משה משרקי מציג חיות לילדים">
+                <img src="./assets/images/moshe/4ca23db5-6af2-49f6-baa8-30cd5ef9e2b6.jpg" alt="משה משרקי מפעיל פעילות עם חיות">
             </div>
             <div class="moshe-text">
                 <h3>משה משרקי</h3>
@@ -287,7 +291,7 @@
             <div class="faq-item">
                 <div class="faq-question">
                     <span>האם החיות ארסיות או מסוכנות?</span>
-                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
                 </div>
                 <div class="faq-answer">
                     <p>החיות לא מסוכנות ולא תוקפניות, הן מורגלות למגע אדם. העקרב והטרנטולה - הארס שלהן לא מסוכן לבני אדם והן רגועות ולא תוקפניות. כל החיות מטופלות ברמה גבוהה ומפוקחות על ידי וטרינר באופן תדיר.</p>
@@ -297,7 +301,7 @@
             <div class="faq-item">
                 <div class="faq-question">
                     <span>כמה זמן נמשכת הפעילות לילדים ביום הולדת?</span>
-                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
                 </div>
                 <div class="faq-answer">
                     <p>ההפעלה נמשכת כשעה וחצי. את ילד או ילדת יום ההולדת אנחנו שמים במרכז ההפעלה עם החיות, הוא מרגיש שזו המסיבה שלו וחלק עקרי בחוויה.</p>
@@ -358,77 +362,77 @@
                 <div class="stars">★★★★★</div>
                 <p class="testimonial-text">"חוויה מדהימה! הילדים נהנו כל כך והמפעיל היה מקצועי ומקסים. החיות היו מטופחות ויפות. ממליצה בחום!"</p>
                 <div class="testimonial-author">
-                    <i class="fas fa-user-circle"></i>
+                    <i class="fas fa-user-circle" aria-hidden="true"></i>
                     <span>הורה מרוצה</span>
                 </div>
             </div>
 
             <div class="testimonial-card">
                 <img src="./assets/images/testimonials/2aa74535-6e7b-4f93-a32d-03efc45268ed.jpg" alt="המלצה 2" class="testimonial-image">
-                <div class="stars">★★★★★</div>
+                <div class="stars" aria-label="דירוג 5 כוכבים">★★★★★</div>
                 <p class="testimonial-text">"יום הולדת שלא נשכח! משה עשה עבודה מדהימה, הילדים היו מרותקים לאורך כל ההפעלה. הייתה פנינה אמיתית!"</p>
                 <div class="testimonial-author">
-                    <i class="fas fa-user-circle"></i>
+                    <i class="fas fa-user-circle" aria-hidden="true"></i>
                     <span>לקוח מרוצה</span>
                 </div>
             </div>
 
             <div class="testimonial-card">
                 <img src="./assets/images/testimonials/85df2356-0ab6-4536-b851-6dcdededbb0a.jpg" alt="המלצה 3" class="testimonial-image">
-                <div class="stars">★★★★★</div>
+                <div class="stars" aria-label="דירוג 5 כוכבים">★★★★★</div>
                 <p class="testimonial-text">"הפעילות הכי מוצלחת שהיתה לנו! המגוון של החיות מדהים והאווירה הייתה נהדרת. תודה רבה!"</p>
                 <div class="testimonial-author">
-                    <i class="fas fa-user-circle"></i>
+                    <i class="fas fa-user-circle" aria-hidden="true"></i>
                     <span>משפחה מרוצה</span>
                 </div>
             </div>
 
             <div class="testimonial-card">
                 <img src="./assets/images/testimonials/b767fb59-3694-4bd2-ae2a-ede470fa7c83.jpg" alt="המלצה 4" class="testimonial-image">
-                <div class="stars">★★★★★</div>
+                <div class="stars" aria-label="דירוג 5 כוכבים">★★★★★</div>
                 <p class="testimonial-text">"משה עושה עבודה מדהימה! הילדים היו בהתרגשות גדולה והחיות היו מקסימות. בהחלט נזמין שוב!"</p>
                 <div class="testimonial-author">
-                    <i class="fas fa-user-circle"></i>
+                    <i class="fas fa-user-circle" aria-hidden="true"></i>
                     <span>הורים מרוצים</span>
                 </div>
             </div>
 
             <div class="testimonial-card">
                 <img src="./assets/images/testimonials/d1f444d4-2b32-440a-ae8a-56d7d8894407.jpg" alt="המלצה 5" class="testimonial-image">
-                <div class="stars">★★★★★</div>
+                <div class="stars" aria-label="דירוג 5 כוכבים">★★★★★</div>
                 <p class="testimonial-text">"חוויה בלתי נשכחת! הילדים דיברו על זה כל השבוע. משה מקצועי, סבלני ויודע לעבוד עם ילדים. ממליצה מאוד!"</p>
                 <div class="testimonial-author">
-                    <i class="fas fa-user-circle"></i>
+                    <i class="fas fa-user-circle" aria-hidden="true"></i>
                     <span>אמא מרוצה</span>
                 </div>
             </div>
 
             <div class="testimonial-card">
                 <img src="./assets/images/testimonials/e7896205-c04b-48e6-a27d-a692f6ac8c72.jpg" alt="המלצה 6" class="testimonial-image">
-                <div class="stars">★★★★★</div>
+                <div class="stars" aria-label="דירוג 5 כוכבים">★★★★★</div>
                 <p class="testimonial-text">"יום הולדת מושלם! ההפעלה הייתה מקצועית, מהנה ובטוחה. החיות במצב מעולה וכולם נהנו. תודה!"</p>
                 <div class="testimonial-author">
-                    <i class="fas fa-user-circle"></i>
+                    <i class="fas fa-user-circle" aria-hidden="true"></i>
                     <span>לקוח מרוצה</span>
                 </div>
             </div>
 
             <div class="testimonial-card">
                 <img src="./assets/images/testimonials/ea0fa27e-4b80-4abd-942d-c52d1d12bba0.jpg" alt="המלצה 7" class="testimonial-image">
-                <div class="stars">★★★★★</div>
+                <div class="stars" aria-label="דירוג 5 כוכבים">★★★★★</div>
                 <p class="testimonial-text">"הפעלה מדהימה ביום הכיף של הגן! הילדים היו מרותקים והמורות התלהבו. שירות מעולה ומקצועי!"</p>
                 <div class="testimonial-author">
-                    <i class="fas fa-user-circle"></i>
+                    <i class="fas fa-user-circle" aria-hidden="true"></i>
                     <span>גננת מרוצה</span>
                 </div>
             </div>
 
             <div class="testimonial-card">
                 <img src="./assets/images/testimonials/f57349ed-d12d-49c9-bf25-621d759fd3b2.jpg" alt="המלצה 8" class="testimonial-image">
-                <div class="stars">★★★★★</div>
+                <div class="stars" aria-label="דירוג 5 כוכבים">★★★★★</div>
                 <p class="testimonial-text">"אנחנו ממליצים בחום! החוויה הייתה מיוחדת, משה היה נהדר והחיות פשוט מקסימות. יום הולדת שלא נשכח!"</p>
                 <div class="testimonial-author">
-                    <i class="fas fa-user-circle"></i>
+                    <i class="fas fa-user-circle" aria-hidden="true"></i>
                     <span>משפחה שמחה</span>
                 </div>
             </div>
@@ -444,44 +448,44 @@
         <div class="contact-container">
             <div class="contact-info">
                 <div class="contact-item">
-                    <i class="fas fa-phone"></i>
+                    <i class="fas fa-phone" aria-hidden="true"></i>
                     <div>
-                        <h4>טלפון</h4>
-                        <a href="tel:0546673141">054-6673141</a>
+                        <h3>טלפון</h3>
+                        <a href="tel:0546673141" aria-label="התקשר למשה בטלפון: 054-6673141">054-6673141</a>
                         <p>ימים א-ה: 9:00 - 20:00<br>יום שישי: 9:00 - 13:00</p>
                     </div>
                 </div>
 
                 <div class="contact-item">
-                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
                     <div>
-                        <h4>וואטסאפ</h4>
-                        <a href="https://wa.me/972546673141?text=שלום,%20אני%20מעוניין%20בפרטים%20על%20הפעילות%20עם%20החיות" target="_blank">שלח הודעת וואטסאפ</a>
+                        <h3>וואטסאפ</h3>
+                        <a href="https://wa.me/972546673141?text=שלום,%20אני%20מעוניין%20בפרטים%20על%20הפעילות%20עם%20החיות" target="_blank" aria-label="שלח הודעת וואטסאפ">שלח הודעת וואטסאפ</a>
                         <p>זמינים לשאלות ולהזמנות</p>
                     </div>
                 </div>
 
                 <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                     <div>
-                        <h4>איזור פעילות</h4>
+                        <h3>איזור פעילות</h3>
                         <p>בכל רחבי הארץ</p>
                     </div>
                 </div>
 
                 <div class="contact-item">
-                    <i class="fas fa-share-alt"></i>
+                    <i class="fas fa-share-alt" aria-hidden="true"></i>
                     <div>
-                        <h4>עקבו אחרינו</h4>
+                        <h3>עקבו אחרינו</h3>
                         <div class="social-links">
-                            <a href="https://www.facebook.com/profile.php?id=100064280765103" target="_blank" class="social-link facebook">
-                                <i class="fab fa-facebook-f"></i>
+                            <a href="https://www.facebook.com/profile.php?id=100064280765103" target="_blank" class="social-link facebook" aria-label="בקר בפייסבוק של מסיבת החיות של משה">
+                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
                             </a>
-                            <a href="https://instagram.com/moshe__mashraki" target="_blank" class="social-link instagram">
-                                <i class="fab fa-instagram"></i>
+                            <a href="https://instagram.com/moshe__mashraki" target="_blank" class="social-link instagram" aria-label="בקר באינסטגרם של משה">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
                             </a>
-                            <a href="https://wa.me/972546673141" target="_blank" class="social-link whatsapp">
-                                <i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/972546673141" target="_blank" class="social-link whatsapp" aria-label="התקשר בוואטסאפ">
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -490,30 +494,35 @@
 
             <div class="contact-form">
                 <h3 style="margin-bottom: 1.5rem; color: var(--dark-color);">שלח הודעה</h3>
-                <form id="contactForm">
+                <form id="contactForm" aria-label="טופס יצירת קשר">
                     <div class="form-group">
                         <label for="name">שם מלא *</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" required aria-required="true" aria-describedby="name-error">
+                        <span id="name-error" class="error-message" role="alert"></span>
                     </div>
                     <div class="form-group">
                         <label for="phone">טלפון *</label>
-                        <input type="tel" id="phone" name="phone" required>
+                        <input type="tel" id="phone" name="phone" required aria-required="true" aria-describedby="phone-error">
+                        <span id="phone-error" class="error-message" role="alert"></span>
                     </div>
                     <div class="form-group">
                         <label for="email">אימייל</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" aria-describedby="email-error">
+                        <span id="email-error" class="error-message" role="alert"></span>
                     </div>
                     <div class="form-group">
                         <label for="message">הודעה *</label>
-                        <textarea id="message" name="message" required></textarea>
+                        <textarea id="message" name="message" required aria-required="true" aria-describedby="message-error"></textarea>
+                        <span id="message-error" class="error-message" role="alert"></span>
                     </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">
-                        <i class="fas fa-paper-plane"></i> שלח הודעה
+                    <button type="submit" class="btn btn-primary" style="width: 100%;" aria-label="שליחת הודעת יצירת קשר">
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i> שלח הודעה
                     </button>
                 </form>
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer>
@@ -533,25 +542,25 @@
             </div>
             <div class="footer-section">
                 <h3>יצירת קשר</h3>
-                <p><i class="fas fa-phone"></i> 054-6673141</p>
-                <p><i class="fas fa-map-marker-alt"></i> בכל רחבי הארץ</p>
-                <p><i class="fas fa-clock"></i> ימים א-ה: 9:00 - 20:00</p>
+                <p><i class="fas fa-phone" aria-hidden="true"></i> 054-6673141</p>
+                <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> בכל רחבי הארץ</p>
+                <p><i class="fas fa-clock" aria-hidden="true"></i> ימים א-ה: 9:00 - 20:00</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; מסיבת החיות של משה. כל הזכויות שמורות. | Created by <a style="color: black;" href="https://nanosite.ai/" target="_blank">NanoSite AI</a></p>
+            <p>&copy; מסיבת החיות של משה. כל הזכויות שמורות. | <a href="./accessibility.html">הצהרת נגישות</a> | Created by <a style="color: #FDB833;" href="https://nanosite.ai/" target="_blank" rel="noopener noreferrer">NanoSite AI</a></p>
         </div>
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/972546673141?text=שלום,%20אני%20מעוניין%20בפרטים%20על%20הפעילות%20עם%20החיות" class="whatsapp-float" target="_blank" title="שלח הודעה בוואטסאפ">
-        <i class="fab fa-whatsapp"></i>
+    <a href="https://wa.me/972546673141?text=שלום,%20אני%20מעוניין%20בפרטים%20על%20הפעילות%20עם%20החיות" class="whatsapp-float" target="_blank" aria-label="שלח הודעה בוואטסאפ">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
     </a>
 
     <!-- Scroll to Top Button -->
-    <div class="scroll-top">
-        <i class="fas fa-arrow-up"></i>
-    </div>
+    <button class="scroll-top" aria-label="עלה לחלק העליון של הדף">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
 
     <script>
         // Google Analytics Event Tracking Function

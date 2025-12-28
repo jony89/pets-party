@@ -6,11 +6,11 @@
 
 :root {
     --primary-color: #FF6B35;
-    --secondary-color: #4ECDC4;
-    --accent-color: #FFD23F;
-    --dark-color: #2C3E50;
-    --light-color: #F7F9FC;
-    --text-color: #333;
+    --secondary-color: #F7931E;
+    --accent-color: #FDB833;
+    --dark-color: #2D3436;
+    --light-color: #F5F5F5;
+    --text-color: #2D3436;
     --white: #FFFFFF;
     --gradient: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -25,6 +25,22 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+/* Skip Link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 10000;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 0;
 }
 
 /* Header & Navigation */
@@ -74,7 +90,8 @@ nav {
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
 }
 
-.logo h1 {
+.logo h1,
+.site-title {
     font-size: 1.5rem;
     color: var(--white);
     font-weight: 700;
@@ -95,11 +112,19 @@ nav {
     transition: all 0.3s ease;
     font-size: 1.05rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    padding: 5px 8px;
 }
 
 .nav-links a:hover {
     color: var(--accent-color);
     transform: translateY(-2px);
+}
+
+.nav-links a:focus-visible {
+    color: var(--accent-color);
+    transform: translateY(-2px);
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
 }
 
 .menu-toggle {
@@ -196,13 +221,19 @@ nav {
     font-family: 'Rubik', sans-serif;
 }
 
+.btn:focus {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+}
+
 .btn-primary {
     background: var(--gradient);
     color: var(--white);
     box-shadow: 0 5px 20px rgba(255, 107, 53, 0.4);
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus {
     transform: translateY(-3px);
     box-shadow: 0 8px 30px rgba(255, 107, 53, 0.6);
 }
@@ -212,7 +243,8 @@ nav {
     color: var(--primary-color);
 }
 
-.btn-secondary:hover {
+.btn-secondary:hover,
+.btn-secondary:focus {
     transform: translateY(-3px);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
@@ -223,7 +255,8 @@ nav {
     box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
 }
 
-.btn-whatsapp:hover {
+.btn-whatsapp:hover,
+.btn-whatsapp:focus {
     transform: translateY(-3px);
     box-shadow: 0 8px 30px rgba(37, 211, 102, 0.6);
 }
@@ -241,14 +274,14 @@ section {
 
 .section-title h2 {
     font-size: 2.8rem;
-    color: var(--dark-color);
+    color: #2D3436;
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
 .section-title p {
     font-size: 1.2rem;
-    color: #666;
+    color: #555;
     max-width: 700px;
     margin: 0 auto;
 }
@@ -279,7 +312,7 @@ section {
 
 .about-text h3 {
     font-size: 2rem;
-    color: var(--primary-color);
+    color: #2D3436;
     margin-bottom: 1rem;
 }
 
@@ -287,6 +320,7 @@ section {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
     line-height: 1.8;
+    color: #333;
 }
 
 .features-grid {
@@ -438,7 +472,7 @@ section {
 
 .moshe-text h3 {
     font-size: 2.5rem;
-    color: var(--primary-color);
+    color: #2D3436;
     margin-bottom: 1.5rem;
 }
 
@@ -446,6 +480,7 @@ section {
     font-size: 1.1rem;
     margin-bottom: 1rem;
     line-height: 1.8;
+    color: #333;
 }
 
 /* FAQ Section */
@@ -479,7 +514,12 @@ section {
     align-items: center;
     font-weight: 600;
     font-size: 1.15rem;
-    color: var(--dark-color);
+    color: #2D3436;
+}
+
+.faq-question:focus-within {
+    outline: 2px solid var(--primary-color);
+    outline-offset: -2px;
 }
 
 .faq-question i {
@@ -504,7 +544,7 @@ section {
 }
 
 .faq-answer p {
-    color: #666;
+    color: #444;
     line-height: 1.8;
 }
 
@@ -538,7 +578,7 @@ section {
 
 .testimonial-text {
     font-style: italic;
-    color: #666;
+    color: #444;
     margin-bottom: 1rem;
     line-height: 1.7;
 }
@@ -547,7 +587,7 @@ section {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: var(--primary-color);
+    color: #FF6B35;
     font-weight: 600;
 }
 
@@ -596,13 +636,20 @@ section {
 
 .contact-item h4 {
     margin-bottom: 0.5rem;
-    color: var(--dark-color);
+    color: #2D3436;
 }
 
 .contact-item a {
-    color: var(--primary-color);
+    color: #0066cc;
     text-decoration: none;
     font-weight: 600;
+}
+
+.contact-item a:hover,
+.contact-item a:focus {
+    text-decoration: underline;
+    outline: 2px solid #0066cc;
+    outline-offset: 2px;
 }
 
 .social-links {
@@ -624,6 +671,13 @@ section {
     transition: all 0.3s ease;
     text-decoration: none;
     flex-shrink: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.social-link:focus {
+    outline: 2px solid #000;
+    outline-offset: 2px;
 }
 
 .social-link i {
@@ -636,6 +690,11 @@ section {
 .social-link:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(255, 107, 53, 0.4);
+}
+
+.social-link:focus {
+    outline: 2px solid #000;
+    outline-offset: 2px;
 }
 
 .social-link.facebook {
@@ -677,14 +736,14 @@ section {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 600;
-    color: var(--dark-color);
+    color: #2D3436;
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
     padding: 12px 15px;
-    border: 2px solid #e0e0e0;
+    border: 2px solid #999;
     border-radius: 10px;
     font-size: 1rem;
     font-family: 'Rubik', sans-serif;
@@ -693,8 +752,19 @@ section {
 
 .form-group input:focus,
 .form-group textarea:focus {
-    outline: none;
+    outline: 2px solid var(--primary-color);
     border-color: var(--primary-color);
+}
+
+.form-group input:required {
+    border-color: #999;
+}
+
+.error-message {
+    display: block;
+    color: #d32f2f;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
 }
 
 .form-group textarea {
@@ -720,20 +790,24 @@ footer {
 }
 
 .footer-section h3 {
-    color: var(--primary-color);
+    color: #FDB833;
     margin-bottom: 1rem;
 }
 
 .footer-section p,
 .footer-section a {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.95);
     text-decoration: none;
     display: block;
     margin-bottom: 0.5rem;
 }
 
-.footer-section a:hover {
+.footer-section a:hover,
+.footer-section a:focus {
     color: var(--white);
+    text-decoration: underline;
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+    outline-offset: 2px;
 }
 
 .footer-bottom {
@@ -760,6 +834,13 @@ footer {
     visibility: hidden;
     transition: all 0.3s ease;
     z-index: 999;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.scroll-top:focus {
+    outline: 2px solid #000;
+    outline-offset: 2px;
 }
 
 .scroll-top.visible {
@@ -767,7 +848,8 @@ footer {
     visibility: visible;
 }
 
-.scroll-top:hover {
+.scroll-top:hover,
+.scroll-top:focus {
     transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(255, 107, 53, 0.6);
 }
@@ -791,9 +873,16 @@ footer {
     transition: all 0.3s ease;
     z-index: 999;
     text-decoration: none;
+    border: none;
 }
 
-.whatsapp-float:hover {
+.whatsapp-float:focus {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+}
+
+.whatsapp-float:hover,
+.whatsapp-float:focus {
     transform: scale(1.1);
     box-shadow: 0 8px 30px rgba(37, 211, 102, 0.6);
 }
@@ -898,5 +987,175 @@ footer {
 
     .gallery-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Accessibility Declaration Page */
+.accessibility-page {
+    margin-top: 80px;
+    min-height: calc(100vh - 80px);
+    background-color: var(--light-color);
+}
+
+.accessibility-hero {
+    background: var(--gradient);
+    color: var(--white);
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.accessibility-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.accessibility-hero p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+}
+
+.accessibility-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.accessibility-content {
+    background-color: var(--white);
+    padding: 60px 5%;
+}
+
+.accessibility-section {
+    margin-bottom: 50px;
+}
+
+.accessibility-section h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.accessibility-section p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.accessibility-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+.feature-item {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    border-right: 4px solid var(--primary-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.feature-icon {
+    display: none;
+}
+
+.feature-content h3 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.feature-content p {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0;
+}
+
+.accessibility-contact {
+    background-color: #f0f8ff;
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.contact-box {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 6px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+}
+
+.contact-box p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.contact-box a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+/* Update footer link styling */
+.footer-bottom a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .accessibility-hero h1 {
+        font-size: 2rem;
+    }
+
+    .accessibility-hero p {
+        font-size: 1rem;
+    }
+
+    .accessibility-features {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-right: none;
+        border-bottom: 4px solid var(--primary-color);
+    }
+
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.8rem;
+    }
+
+    .accessibility-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .accessibility-contact {
+        border-left: none;
+        border-bottom: 4px solid var(--primary-color);
     }
 }
