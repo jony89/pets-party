@@ -5,14 +5,14 @@
 }
 
 :root {
-    --primary-color: #FF6B35;
+    --primary-color: #D93A00;
     --secondary-color: #F7931E;
     --accent-color: #FDB833;
     --dark-color: #2D3436;
     --light-color: #F5F5F5;
     --text-color: #2D3436;
     --white: #FFFFFF;
-    --gradient: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+    --gradient: linear-gradient(135deg, #D93A00 0%, #F7931E 100%);
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
 }
@@ -250,15 +250,15 @@ nav {
 }
 
 .btn-whatsapp {
-    background: #25D366;
+    background: #128C7E;
     color: var(--white);
-    box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+    box-shadow: 0 5px 20px rgba(18, 140, 126, 0.4);
 }
 
 .btn-whatsapp:hover,
 .btn-whatsapp:focus {
     transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(37, 211, 102, 0.6);
+    box-shadow: 0 8px 30px rgba(18, 140, 126, 0.6);
 }
 
 /* Sections */
@@ -587,12 +587,12 @@ section {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #FF6B35;
+    color: #D93A00;
     font-weight: 600;
 }
 
 .stars {
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 /* Contact Section */

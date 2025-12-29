@@ -1,0 +1,21 @@
+{
+    "name": "nanosite-websites",
+    "version": "1.0.0",
+    "description": "Monorepo to manage NanoSite projects",
+    "type": "module",
+    "scripts": {
+        "build": "npx tsx ./packages/build/src/build.mts -s ./apps/$1/src -o ./dist/apps/$1",
+        "build-windows": "node -e \"const app = process.argv[1]; if (!app) { console.error('Please provide app name'); process.exit(1); } require('child_process').execSync(`npx tsx ./packages/build/src/build.mts -s ./apps/${app}/src -o ./dist/apps/${app}`, {stdio: 'inherit'}); \" --"
+    },
+    "keywords": [
+        "build",
+        "cache-busting",
+        "typescript"
+    ],
+    "dependencies": {},
+    "devDependencies": {},
+    "workspaces": [
+        "packages/*",
+        "apps/*"
+    ]
+}

@@ -1,2 +1,1 @@
-# pets-party
-pets-party repo
+this repo is deprecated. Please visit nanosite-pages
